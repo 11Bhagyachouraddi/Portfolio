@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section" data-aos="fade-in">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Bhagya Ramesh Chouraddi </p>
+            <button class="cta">Explore More</button>
+        </div>
+    </section>
+    
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images\Bhagya.jpg" alt="My Photo" class="about-photo">
+                <p>I am a passionate web developer with a knack for crafting dynamic and responsive websites. 
+                    With a solid foundation in HTML, CSS, and JavaScript, I bring designs to life with clean and efficient code. 
+                    My expertise extends to modern frameworks like React and Vue.js, enhancing user experience with seamless interactivity.
+                    I thrive in collaborative environments, consistently delivering high-quality solutions in agile settings.
+                    Proficient in both frontend and backend development, I create robust and scalable applications.
+                    Continuous learning and keeping up with the latest industry trends are my driving forces.
+                    In addition to my technical skills, I have a keen eye for design, ensuring aesthetic and functional harmony.
+                    I am committed to optimizing performance and accessibility, making the web a better place for everyone.
+                    </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                    <h3>Mini Weather Data Logger</h3>
+                    <p>In my weather data logger mini project, I engineered a compact yet powerful solution for capturing and analyzing meteorological data. Leveraging sensors and microcontrollers, I designed a robust system capable of recording temperature, humidity, and atmospheric pressure with precision.
+                        The heart of the project lies in its ability to collect real-time data and store it efficiently for further analysis. Through careful calibration and programming, I ensured accurate measurements under varying environmental conditions, enabling insights into weather patterns over time.
+                        User interaction was a key consideration, so I integrated a user-friendly interface that provides instant access to current conditions and historical data. Whether through an LCD display or a web-based dashboard, users can easily monitor and interpret the collected information.
+                        Data integrity and security were paramount, so I implemented robust encryption protocols and backup mechanisms to safeguard against data loss or tampering. This ensures the reliability and confidentiality of the captured data, instilling trust in the system's outputs.
+                        Throughout the development process, I prioritized scalability and modularity, designing the system to easily accommodate additional sensors or functionalities in the future. This future-proofing ensures that the weather data logger remains adaptable to evolving needs and technologies.
+                        In summary, my weather data logger mini project represents a convergence of hardware and software expertise, delivering a compact yet comprehensive solution for capturing, analyzing, and interpreting meteorological data with accuracy, accessibility, and reliability.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
